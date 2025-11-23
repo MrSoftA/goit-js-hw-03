@@ -1,4 +1,9 @@
-
+function slugify(title){
+    const titleSlim = title.toLowerCase();
+    const titlePodil = titleSlim.split(' ');
+    const titleTire = titlePodil.join('-');
+    return titleTire;
+}
 
 
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
